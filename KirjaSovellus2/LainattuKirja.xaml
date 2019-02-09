@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="KirjaSovellus2.LainattuKirja"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KirjaSovellus2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <FlyoutBase.AttachedFlyout>
+            <MenuFlyout/>
+        </FlyoutBase.AttachedFlyout>
+        <TextBlock HorizontalAlignment="Left" Margin="112,92,0,0" Text="Kirjailija" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbKirjailija" HorizontalAlignment="Left" Margin="112,117,0,0" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,154,0,0" Text="Kirjan nimi" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbKirja" HorizontalAlignment="Left" Margin="112,174,0,0" Text="" VerticalAlignment="Top" Width="164"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,211,0,0" Text="Lainaispäivämäärä" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpLainausPvm" HorizontalAlignment="Left" Margin="112,236,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLisaaLainattu" Content="Tallenna kirja" HorizontalAlignment="Left" Margin="112,273,0,0" VerticalAlignment="Top" Width="112" Click="btnLisaaLainattu_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="304,49,0,0" Text="Tallenna lainattu kirja" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="btnTakaisin" Content="Takaisin pääsivulle" HorizontalAlignment="Left" Margin="246,273,0,0" VerticalAlignment="Top" Width="151" Click="btnTakaisin_Click"/>
+    </Grid>
+</Page>
